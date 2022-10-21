@@ -1,0 +1,17 @@
+def BMI_calculator(height, weight):
+    height = height/100
+    BMI = weight/(height**2)
+    round(BMI, 1)
+    if BMI < 18.49:
+        print("Underweight!")
+    elif BMI > 18.5 and BMI < 24.99:
+        print("Optimum")
+    elif BMI > 25 and BMI < 29.99:
+        print("Overweight")
+    else:
+        print("Obesity")
+
+weight = int(input("What is your weight?"))
+height = int(input("What is your height in centimeters?"))
+
+print(BMI_calculator(height, weight))
